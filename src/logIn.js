@@ -1,6 +1,6 @@
         // Login by clicking to a dropdown
 describe('Login', () => {
-    let classDropDownSelector = '.form-icon-left ul li:nth-child(1)';
+    let classDropDownSelector = '.mini-menu ul li:nth-child(3)';
     let loginLinkText = '=Login';
     let usernameSelector = '[name="username"]';
     let passwordSelector = '[name="password"]';

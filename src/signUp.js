@@ -12,7 +12,7 @@ describe('Sign Up', () => {
     it('Sign up unsuccessfully', () => {
         // [1] Open a Home page
         browser.url("https://www.phptravels.net/home");
-        //browser.maximizeWindow();
+        browser.maximizeWindow();
 
         // [2] Click to the dropdown
         $(dropDownSelector).click();

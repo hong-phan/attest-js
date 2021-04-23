@@ -1,46 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Book a flight" timestamp="2021-04-14T16:22:53" time="13.835" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="API learning" timestamp="2021-04-23T09:40:18" time="7.07" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Book a flight"/>
-      <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
-      <property name="file" value=".\src\bookFlight.js"/>
+      <property name="suiteName" value="API learning"/>
+      <property name="capabilities" value="chrome.90_0_4430_72.windows"/>
+      <property name="file" value=".\p2\getAttribute.js"/>
     </properties>
-    <testcase classname="chrome.89_0_4389_128.windows.Book a flight" name="Book a flight uncessfully" time="13.834">
-      <failure/>
-      <error message="Option with text &quot;first&quot; not found."/>
+    <testcase classname="chrome.90_0_4430_72.windows.API learning" name="Get Attribute for username text box" time="7.068">
       <system-out><![CDATA[
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/url - {"url":"https://www.phptravels.net/home"}
-RESULT: {"url":"https://www.phptravels.net/home"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element - {"using":"css selector","value":"[href=\"#flights\"]"}
-RESULT: {"using":"css selector","value":"[href=\"#flights\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element/3d58459b-3088-4607-81bc-82e454cfac11/click - {}
+COMMAND: POST /session/c0aed21d91d3d8cc41ddceba0d97d322/url - {"url":"http://the-internet.herokuapp.com/login"}
+RESULT: {"url":"http://the-internet.herokuapp.com/login"}
+COMMAND: POST /session/c0aed21d91d3d8cc41ddceba0d97d322/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: POST /session/c0aed21d91d3d8cc41ddceba0d97d322/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c80c29fb-b477-4b73-904f-f6ea94a588f8","ELEMENT":"c80c29fb-b477-4b73-904f-f6ea94a588f8"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c80c29fb-b477-4b73-904f-f6ea94a588f8","ELEMENT":"c80c29fb-b477-4b73-904f-f6ea94a588f8"}]}
+COMMAND: POST /session/c0aed21d91d3d8cc41ddceba0d97d322/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: GET /session/c0aed21d91d3d8cc41ddceba0d97d322/element/c80c29fb-b477-4b73-904f-f6ea94a588f8/attribute/type - {}
 RESULT: {}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element - {"using":"css selector","value":"[name=\"cabinclass\"]"}
-RESULT: {"using":"css selector","value":"[name=\"cabinclass\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element/59707e0a-a87d-40a6-9e0e-3e8b08daca65/element - {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-RESULT: {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element - {"using":"css selector","value":"[name=\"cabinclass\"]"}
-RESULT: {"using":"css selector","value":"[name=\"cabinclass\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element/59707e0a-a87d-40a6-9e0e-3e8b08daca65/element - {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-RESULT: {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-COMMAND: DELETE /session/8ad91a776d057f0a317800666012f582 - {}
+COMMAND: POST /session/c0aed21d91d3d8cc41ddceba0d97d322/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: GET /session/c0aed21d91d3d8cc41ddceba0d97d322/element/c80c29fb-b477-4b73-904f-f6ea94a588f8/attribute/name - {}
+RESULT: {}
+COMMAND: POST /session/c0aed21d91d3d8cc41ddceba0d97d322/element - {"using":"css selector","value":"#username"}
+RESULT: {"using":"css selector","value":"#username"}
+COMMAND: GET /session/c0aed21d91d3d8cc41ddceba0d97d322/element/c80c29fb-b477-4b73-904f-f6ea94a588f8/attribute/id - {}
+RESULT: {}
+COMMAND: DELETE /session/c0aed21d91d3d8cc41ddceba0d97d322 - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Option with text "first" not found.
-    at Element.selectByVisibleText (C:\JS_NodeJS\node_modules\webdriverio\build\commands\element\selectByVisibleText.js:59:15)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at async Element.elementErrorHandlerCallbackFn (C:\JS_NodeJS\node_modules\webdriverio\build\middlewares.js:23:32)
-    at async Element.runCommandWithHooks (C:\JS_NodeJS\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
-    at Element.runCommandWithHooks (C:\JS_NodeJS\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
-    at Element.wrapCommandFn (C:\JS_NodeJS\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
-    at Element.elementErrorHandlerCallback (C:\JS_NodeJS\node_modules\webdriverio\build\middlewares.js:44:12)
-    at Context.<anonymous> (C:\JS_NodeJS\src\bookFlight.js:23:34)
-    at Context.executeSync (C:\JS_NodeJS\node_modules\@wdio\sync\build\index.js:38:22)
-    at C:\JS_NodeJS\node_modules\@wdio\sync\build\index.js:69:68
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>
