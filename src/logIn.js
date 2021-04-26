@@ -1,11 +1,14 @@
-        // Login by clicking to a dropdown
-describe('Login', () => {
+
+    // Login by clicking to a dropdown
+    describe('Login', () => {
     let classDropDownSelector = '.mini-menu ul li:nth-child(3)';
     let loginLinkText = '=Login';
     let usernameSelector = '[name="username"]';
     let passwordSelector = '[name="password"]';
-    let loginBtn = '[type="submit"]';
+    let loginBtn = '//button[text()="Login"]';
+    //let loginBtn = '[type="submit"]';
 
+  
     it('Log in unsuccessfully', () => {
         // [1] Open a Home page
         browser.url("https://www.phptravels.net/home");
@@ -20,13 +23,14 @@ describe('Login', () => {
         // [4] Input username and password
         $(usernameSelector).setValue('ptthong@gmail.com');
         $(passwordSelector).setValue('ptthonggmail.com');
-        browser.pause(3000);
+        browser.pause(2000);
         
         // [5] Click the Login button
         $(loginBtn).click();
+        //$(loginBtn).click({button: 'Login'});
 
         // [6] Pause a little to see the result
-        browser.pause(3000);
+        browser.pause(2000);
         
     });
 });
