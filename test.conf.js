@@ -1,7 +1,7 @@
 exports.config = {
     // Test script
     specs: [
-        "./src/bookFlight.js"
+        "src/signUp.js"
     ],
     capabilities: [
         {

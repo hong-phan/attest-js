@@ -1,46 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Book a flight" timestamp="2021-04-14T16:22:53" time="13.835" tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="Sign Up" timestamp="2021-04-26T14:56:25" time="17.214" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Book a flight"/>
-      <property name="capabilities" value="chrome.89_0_4389_128.windows"/>
-      <property name="file" value=".\src\bookFlight.js"/>
+      <property name="suiteName" value="Sign Up"/>
+      <property name="capabilities" value="chrome.90_0_4430_85.windows"/>
+      <property name="file" value=".\src\signUp.js"/>
     </properties>
-    <testcase classname="chrome.89_0_4389_128.windows.Book a flight" name="Book a flight uncessfully" time="13.834">
-      <failure/>
-      <error message="Option with text &quot;first&quot; not found."/>
+    <testcase classname="chrome.90_0_4430_85.windows.Sign Up" name="Sign up unsuccessfully" time="17.212">
       <system-out><![CDATA[
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/url - {"url":"https://www.phptravels.net/home"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/url - {"url":"https://www.phptravels.net/home"}
 RESULT: {"url":"https://www.phptravels.net/home"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element - {"using":"css selector","value":"[href=\"#flights\"]"}
-RESULT: {"using":"css selector","value":"[href=\"#flights\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element/3d58459b-3088-4607-81bc-82e454cfac11/click - {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element - {"using":"css selector","value":"[name=\"cabinclass\"]"}
-RESULT: {"using":"css selector","value":"[name=\"cabinclass\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element/59707e0a-a87d-40a6-9e0e-3e8b08daca65/element - {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-RESULT: {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element - {"using":"css selector","value":"[name=\"cabinclass\"]"}
-RESULT: {"using":"css selector","value":"[name=\"cabinclass\"]"}
-COMMAND: POST /session/8ad91a776d057f0a317800666012f582/element/59707e0a-a87d-40a6-9e0e-3e8b08daca65/element - {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-RESULT: {"using":"xpath","value":"./option[. = \"first\"]|./option[normalize-space(text()) = \"first\"]|./optgroup/option[. = \"first\"]|./optgroup/option[normalize-space(text()) = \"first\"]"}
-COMMAND: DELETE /session/8ad91a776d057f0a317800666012f582 - {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":".mini-menu ul li:nth-child(3)"}
+RESULT: {"using":"css selector","value":".mini-menu ul li:nth-child(3)"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/b3c0ab65-c9ca-48d3-b500-ba16f77e2053/click - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"link text","value":"Sign Up"}
+RESULT: {"using":"link text","value":"Sign Up"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/9cb2b262-cfd9-4f9b-b70e-a79d13d94745/click - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[name=\"firstname\"]"}
+RESULT: {"using":"css selector","value":"[name=\"firstname\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/00ef8b36-6a54-499d-90d7-c9235d498d69/clear - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/00ef8b36-6a54-499d-90d7-c9235d498d69/value - {"text":"Hong"}
+RESULT: {"text":"Hong"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[name=\"lastname\"]"}
+RESULT: {"using":"css selector","value":"[name=\"lastname\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/01c084bd-72a6-496a-a948-8a69a6e803dc/clear - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/01c084bd-72a6-496a-a948-8a69a6e803dc/value - {"text":"Phan"}
+RESULT: {"text":"Phan"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[name=\"phone\"]"}
+RESULT: {"using":"css selector","value":"[name=\"phone\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/7e74a9d6-e210-4859-99a9-a3d0b5cb4e86/clear - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/7e74a9d6-e210-4859-99a9-a3d0b5cb4e86/value - {"text":"094682398"}
+RESULT: {"text":"094682398"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[name=\"email\"]"}
+RESULT: {"using":"css selector","value":"[name=\"email\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/30c1ffa1-a353-4fec-b0f1-1008dee2e1b1/clear - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/30c1ffa1-a353-4fec-b0f1-1008dee2e1b1/value - {"text":"ptthong@gmail.com"}
+RESULT: {"text":"ptthong@gmail.com"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[name=\"password\"]"}
+RESULT: {"using":"css selector","value":"[name=\"password\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/5b0a5e73-746c-43c1-926c-4c0f3460a5f9/clear - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/5b0a5e73-746c-43c1-926c-4c0f3460a5f9/value - {"text":"ptthonghong"}
+RESULT: {"text":"ptthonghong"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[name=\"confirmpassword\"]"}
+RESULT: {"using":"css selector","value":"[name=\"confirmpassword\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/17ed9c9f-db91-47a0-a74f-abd75c89d501/clear - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/17ed9c9f-db91-47a0-a74f-abd75c89d501/value - {"text":"ptthonghonghong"}
+RESULT: {"text":"ptthonghonghong"}
+COMMAND: GET /session/84d2552f1dbc075bb82f283cb920815e/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element - {"using":"css selector","value":"[type=\"submit\"]"}
+RESULT: {"using":"css selector","value":"[type=\"submit\"]"}
+COMMAND: POST /session/84d2552f1dbc075bb82f283cb920815e/element/91e76bb8-a5b1-48ee-9a45-860b9d8f49dc/click - {}
+RESULT: {}
+COMMAND: GET /session/84d2552f1dbc075bb82f283cb920815e/screenshot - {}
+RESULT: {}
+COMMAND: DELETE /session/84d2552f1dbc075bb82f283cb920815e - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-Error: Option with text "first" not found.
-    at Element.selectByVisibleText (C:\JS_NodeJS\node_modules\webdriverio\build\commands\element\selectByVisibleText.js:59:15)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at async Element.elementErrorHandlerCallbackFn (C:\JS_NodeJS\node_modules\webdriverio\build\middlewares.js:23:32)
-    at async Element.runCommandWithHooks (C:\JS_NodeJS\node_modules\@wdio\sync\build\wrapCommand.js:105:25)
-    at Element.runCommandWithHooks (C:\JS_NodeJS\node_modules\@wdio\sync\build\wrapCommand.js:100:24)
-    at Element.wrapCommandFn (C:\JS_NodeJS\node_modules\@wdio\sync\build\wrapCommand.js:67:44)
-    at Element.elementErrorHandlerCallback (C:\JS_NodeJS\node_modules\webdriverio\build\middlewares.js:44:12)
-    at Context.<anonymous> (C:\JS_NodeJS\src\bookFlight.js:23:34)
-    at Context.executeSync (C:\JS_NodeJS\node_modules\@wdio\sync\build\index.js:38:22)
-    at C:\JS_NodeJS\node_modules\@wdio\sync\build\index.js:69:68
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>
