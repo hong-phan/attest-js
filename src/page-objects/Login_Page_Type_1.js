@@ -1,7 +1,8 @@
 const USER_NAME_TXTBX = '[name="username"]';
 const PASSWORD_TXTBX = '[name="password"]';
 const LOGIN_BTN = '[type="submit"]';
-//const CLASS_DROPDOWN_SELECTOR = '.mini-menu ul li:nth-child(3)';
+const DROPDOWN_SELECTOR = '.mini-menu ul li:nth-child(3)';
+const LOGIN_LINK_TEXT = '=Login';
 
 class Login_Page {
 
@@ -9,9 +10,13 @@ class Login_Page {
         $(USER_NAME_TXTBX).waitForDisplayed(15000);
     }
     
-    // get classDropDownSelector (){
-    //     return $(CLASS_DROPDOWN_SELECTOR);
-    // }
+    get dropDownSelector (){
+        return $(DROPDOWN_SELECTOR);
+    }
+
+    get loginLinkText (){
+        return $(LOGIN_LINK_TEXT);
+    }
 
     get username(){
         return $(USER_NAME_TXTBX);
