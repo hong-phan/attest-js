@@ -15,21 +15,20 @@ describe('Apply Method Chaining to Login Page', () => {
         LoginPage.clickLoginLinkText();
         LoginPage.waitUsernameTxtbxDisplayed();
         
-        // browser.saveScreenshot(screenShotPathInit)
-        // ScreenShot.screenShotInit();
+        //browser.saveScreenshot(screenShotPathInit)
+        ScreenShot.screenShotInit();
 
         LoginPage.inputUsername(dataLogin.userName);
-        LoginPage.inputPassword(dataLogin.passWord);
+        LoginPage.inputPassword(dataLogin.password);
 
-        // browser.saveScreenshot(screenShotPathInput);
-        // ScreenShot.screenShotInput();
+        //browser.saveScreenshot(screenShotPathInput);
+        ScreenShot.screenShotInput();
         
         LoginPage.clickLoginBtn();
 
-        // browser.saveScreenshot(screenShotPathResult);
-        // ScreenShot.screenShotResult();
-
-        browser.pause(2000);
+        //browser.saveScreenshot(screenShotPathResult);
+        ScreenShot.screenShotResult();
+        
     });
     
 });

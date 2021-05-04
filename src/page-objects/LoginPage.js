@@ -7,7 +7,6 @@ let screenShotPathInit = './src/screenShots-files/LoginInit.png'
 let screenShotPathInput = './src/screenShots-files/LoginInput.png'
 let screenShotPathResult = './src/screenShots-files/LoginResult.png'
 
-
 class LoginPage{
     clickDropdown (){
         $(DRODDOWN_SELECTOR).click();
@@ -48,11 +47,10 @@ class ScreenShot {
         browser.saveScreenshot(screenShotPathResult);
     }
 
-
 }
 
 module.exports = new LoginPage();
-//module.exports = new ScreenShot();
+module.exports = new ScreenShot();
 
 
 

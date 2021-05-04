@@ -1,7 +1,7 @@
 exports.config = {
     // Test script
     specs: [
-        "src/signUp.js"
+        "src/test-scripts/Login_Method_Chaining.js"
     ],
     capabilities: [
         {
